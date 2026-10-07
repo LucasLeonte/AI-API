@@ -98,10 +98,10 @@ Modern CI/CD pipelines (GitHub Actions, GitLab CI, Docker Build, etc.) generate 
 
 | Resource | URL |
 |---|---|
-| **API Base URL** | `https://ci-failure-analyzer.onrender.com` |
-| **Interactive Docs (Swagger)** | `https://ci-failure-analyzer.onrender.com/docs` |
-| **ReDoc** | `https://ci-failure-analyzer.onrender.com/redoc` |
-| **Health Check** | `https://ci-failure-analyzer.onrender.com/health` |
+| **API Base URL** | `https://ai-api-u87r.onrender.com` |
+| **Interactive Docs (Swagger)** | `https://ai-api-u87r.onrender.com/docs` |
+| **ReDoc** | `https://ai-api-u87r.onrender.com/redoc` |
+| **Health Check** | `https://ai-api-u87r.onrender.com/health` |
 
 > **Note:** Replace the placeholder URL above with your actual Render service URL after deployment.
 
@@ -214,7 +214,7 @@ Liveness probe — returns `200 OK` immediately, no auth required.
 
 **cURL:**
 ```bash
-curl https://ci-failure-analyzer.onrender.com/health
+curl https://ai-api-u87r.onrender.com/health
 ```
 
 ---
@@ -270,7 +270,7 @@ Submit a raw CI/CD failure log and receive a structured diagnosis.
 
 ```bash
 # Basic request
-curl -X POST https://ci-failure-analyzer.onrender.com/api/v1/analyze \
+curl -X POST https://ai-api-u87r.onrender.com/api/v1/analyze \
   -H "Content-Type: application/json" \
   -d '{
     "ci_environment": "github-actions",
@@ -278,7 +278,7 @@ curl -X POST https://ci-failure-analyzer.onrender.com/api/v1/analyze \
   }'
 
 # Docker build failure
-curl -X POST https://ci-failure-analyzer.onrender.com/api/v1/analyze \
+curl -X POST https://ai-api-u87r.onrender.com/api/v1/analyze \
   -H "Content-Type: application/json" \
   -d '{
     "ci_environment": "docker-build",
