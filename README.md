@@ -103,8 +103,6 @@ Modern CI/CD pipelines (GitHub Actions, GitLab CI, Docker Build, etc.) generate 
 | **ReDoc** | `https://ai-api-u87r.onrender.com/redoc` |
 | **Health Check** | `https://ai-api-u87r.onrender.com/health` |
 
-> **Note:** Replace the placeholder URL above with your actual Render service URL after deployment.
-
 ## Local Setup
 
 ### Prerequisites
