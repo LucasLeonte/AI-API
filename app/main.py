@@ -40,10 +40,10 @@ app = FastAPI(
         "cause breakdown, error category, and optional auto-fix code patches — "
         "powered by Google Gemini.\n\n"
         "**Key features:**\n"
-        "- 🔒 Secret redaction before logs reach the LLM\n"
-        "- 🚦 IP-based rate limiting via SlowAPI\n"
-        "- 📐 Strict Pydantic v2 request & response validation\n"
-        "- 🐳 Docker-ready with non-root user\n\n"
+        "- Secret redaction before logs reach the LLM\n"
+        "- IP-based rate limiting via SlowAPI\n"
+        "- Strict Pydantic v2 request & response validation\n"
+        "- Docker-ready with non-root user\n\n"
         "Source code: [github.com/LucasLeonte/AI-API](https://github.com/LucasLeonte/AI-API)"
     ),
     version="1.0.0",

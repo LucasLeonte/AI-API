@@ -23,7 +23,7 @@ class Settings(BaseSettings):
         description="API key for the LLM provider (Google Gemini or OpenAI).",
     )
     llm_model: str = Field(
-        default="gemini-2.5-flash",
+        default="gemini-3.1-flash-lite",
         description="Model identifier to use for log analysis.",
     )
 

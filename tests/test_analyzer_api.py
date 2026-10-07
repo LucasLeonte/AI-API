@@ -51,7 +51,7 @@ def client() -> TestClient:
         mock_cfg.environment = "development"
         mock_cfg.cors_origins = ["*"]
         mock_cfg.llm_api_key = "fake-key"
-        mock_cfg.llm_model = "gemini-2.5-flash"
+        mock_cfg.llm_model = "gemini-3.1-flash-lite"
 
         import importlib
         import app.main as main_module

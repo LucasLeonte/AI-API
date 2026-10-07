@@ -46,7 +46,7 @@ def _make_client(rate_limit: str = "3/minute") -> TestClient:
         mock_cfg.environment = "development"
         mock_cfg.cors_origins = ["*"]
         mock_cfg.llm_api_key = "fake-key"
-        mock_cfg.llm_model = "gemini-2.5-flash"
+        mock_cfg.llm_model = "gemini-3.1-flash-lite"
 
         # Re-import app *after* patching settings so the limiter picks up the new limit
         import importlib
@@ -73,7 +73,7 @@ class TestRateLimiting:
             mock_cfg.environment = "development"
             mock_cfg.cors_origins = ["*"]
             mock_cfg.llm_api_key = "fake-key"
-            mock_cfg.llm_model = "gemini-2.5-flash"
+            mock_cfg.llm_model = "gemini-3.1-flash-lite"
 
             import importlib
             import app.main as main_module
@@ -102,7 +102,7 @@ class TestRateLimiting:
             mock_cfg.environment = "development"
             mock_cfg.cors_origins = ["*"]
             mock_cfg.llm_api_key = "fake-key"
-            mock_cfg.llm_model = "gemini-2.5-flash"
+            mock_cfg.llm_model = "gemini-3.1-flash-lite"
 
             import importlib
             import app.main as main_module
@@ -128,7 +128,7 @@ class TestRateLimiting:
             mock_cfg.environment = "development"
             mock_cfg.cors_origins = ["*"]
             mock_cfg.llm_api_key = "fake-key"
-            mock_cfg.llm_model = "gemini-2.5-flash"
+            mock_cfg.llm_model = "gemini-3.1-flash-lite"
 
             import importlib
             import app.main as main_module

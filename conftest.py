@@ -10,7 +10,7 @@ import os
 
 # ── Inject test-safe env vars before any app module is imported ───────────────
 os.environ.setdefault("LLM_API_KEY", "test-fake-key-not-used-in-unit-tests")
-os.environ.setdefault("LLM_MODEL", "gemini-2.5-flash")
+os.environ.setdefault("LLM_MODEL", "gemini-3.1-flash-lite")
 os.environ.setdefault("RATE_LIMIT_PER_MINUTE", "100/minute")
 os.environ.setdefault("MAX_LOG_SIZE_CHARS", "50000")
 os.environ.setdefault("ENVIRONMENT", "development")
