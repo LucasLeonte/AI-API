@@ -366,15 +366,3 @@ AI-API/
 ├── requirements.txt
 └── README.md
 ```
-
-## Deployment (Render)
-
-1. Push your code to GitHub (already done).
-2. Create a new **Web Service** on [Render](https://render.com).
-3. Connect the `LucasLeonte/AI-API` repository.
-4. Configure:
-   - **Build Command:** `pip install -r requirements.txt`
-   - **Start Command:** `uvicorn app.main:app --host 0.0.0.0 --port 8000`
-   - **Environment Variables:** Add `LLM_API_KEY`, `ENVIRONMENT=production`, etc.
-5. Deploy — Render will provide a public URL.
-6. Update the **Live Demo** URLs in this README with your actual service URL.
